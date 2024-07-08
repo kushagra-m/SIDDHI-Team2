@@ -1,0 +1,24 @@
+# version: "3.12"
+# services:
+#   main-uplink:
+#     # if something fails or the server is restarted, the container will restart
+#     restart: no
+#     container_name: main-uplink
+#     image: main-uplink
+#     build: 
+#       # build the iris clasifier image from the Dockerfile in the current directory
+#       context: . 
+#     volumes:
+#       - .:/main
+#     environment:
+#       - PYTHONUNBUFFERED=1
+
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./uploads:/app/uploads

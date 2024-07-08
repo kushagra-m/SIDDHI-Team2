@@ -1,0 +1,74 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url('./components/assets/steven-hwg-zBsdRTHIIm4-unsplash.jpg') no-repeat;
+  background-size: 100vw 100vh; /* Ensure height covers the viewport and width adjusts automatically */
+  background-position: center;
+  backdrop-filter: blur(3px);
+  padding: 5vw;
+  margin: 0;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 4vw;
+    padding: 10vw;
+    background-size: auto 100vh; /* Ensure height covers the viewport and width adjusts automatically */
+  }
+  
+  .wrapperh {
+    padding: 6vw;
+  }
+  
+  table {
+    font-size: 3.5vw;
+  }
+  
+  td, th {
+    font-size: 3.5vw;
+    padding: 4vw;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 4vw;
+    padding: 12vw;
+    background-size: auto 100vh; /* Ensure height covers the viewport and width adjusts automatically */
+    background-position: center;
+  }
+  
+  .wrapperh {
+    padding: 8vw;
+  }
+  
+  table {
+    font-size: 4vw;
+  }
+  
+  td, th {
+    font-size: 1vw;
+    padding: 5vw;
+  }
+}

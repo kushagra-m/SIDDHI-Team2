@@ -1,0 +1,57 @@
+.wrapperh {
+    background: rgb(0, 57, 109);
+    background: linear-gradient(0deg, rgba(0, 57, 109, 0.4) 6%, rgba(0, 104, 171, 0.4) 82%);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 8px;
+    padding: 2vw 4vw;
+    width: 80vw; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center the wrapper horizontally */
+    overflow: auto;
+    max-height: 80vh;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%; /* Make table take full width of the container */
+    border: 2px solid white;
+    border-collapse: collapse; /* Ensure borders collapse into a single border */
+    margin: 0 auto; /* Center the table horizontally */
+}
+
+td, th {
+    text-align: center;
+    font-size: 1.2vw; /* Adjust font-size based on viewport width */
+    padding: 0.5vw; /* Adjust padding based on viewport width */
+    width: 20%; /* Make columns responsive */
+    overflow: hidden;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+tr:hover {
+    background-color: rgba(0, 104, 171, 0.5);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    td, th {
+        font-size: 1.2vw; /* Increase font-size for readability on smaller screens */
+        padding: 0.5vw; /* Increase padding for better spacing */
+        width: 100%; /* Allow table cells to take full width */
+    }
+}
+
+/* Responsive adjustments for very small screens */
+@media (max-width: 480px) {
+    .wrapperh {
+        padding: 3vw 4vw;
+    }
+    
+    td, th {
+        font-size: 3vw; /* Further increase font-size */
+        padding: 2vw; /* Further increase padding */
+    }
+}

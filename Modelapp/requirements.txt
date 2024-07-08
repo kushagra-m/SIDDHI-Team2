@@ -1,0 +1,11 @@
+mne==1.7.0
+numpy==1.25.0
+matplotlib==3.7.1
+scipy==1.11.4
+scikit-learn==1.2.2
+tensorflow-cpu==2.15.0
+fastapi==0.111.0
+uvicorn==0.30.1
+pyngrok==7.1.6
+nest-asyncio==1.6.0
+

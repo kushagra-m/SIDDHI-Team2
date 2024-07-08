@@ -1,0 +1,129 @@
+.wrapper {
+    background: rgb(0, 57, 109);
+    background: linear-gradient(0deg, rgba(0, 57, 109, 0.4) 6%, rgba(0, 104, 171, 0.4) 82%);  
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 8px;
+    padding: 30px 40px;
+    max-width: 100vw;
+}
+
+.wrapper-top {
+    width: 100vw;
+    height: 60px;
+    background: rgb(0, 57, 109);
+    background: linear-gradient(0deg, rgba(0, 57, 109, 0.4) 6%, rgba(0, 104, 171, 0.4) 82%);    
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 0px;
+    /* padding: 21px 40px; */
+    padding-top: 18px;
+    padding-bottom: 22px;
+    padding-left: 25px;
+    padding-right: 21px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures the container is on top of other elements */
+}
+
+.wrapper h2 {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.wrapper h3 {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 2px;
+  text-decoration: underline;
+  text-shadow: black;
+}
+
+.wrapper .nselect {
+    width: 100%;
+    height: 18px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+.wrapper-top ul {
+    list-style-type: none;
+    /* margin: 0;
+    padding: 0; */
+    background: transparent;
+    font-size: 18px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-right: 24px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    text-decoration: underline;
+  }
+
+.uploadf {
+  margin-left: 3px;
+  margin-top: 10px;
+}
+
+.upload {
+  margin-top: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  border-radius: 8px;
+  font-size: 18px; /* Adjust font size */
+  border: none; /* Remove border */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* HomePage.css */
+
+.image-container {
+  margin-top: 10px;
+  max-width: 100%; /* Adjust as needed */
+  max-height: 100%; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 480px) {
+  .wrapper-top ul {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 95vw;
+  }
+}
+
+  
+

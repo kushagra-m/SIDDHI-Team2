@@ -1,0 +1,28 @@
+.wrapperf {
+    background: rgb(0,57,109);
+    background: linear-gradient(0deg, rgba(0,57,109,0.4) 6%, rgba(0,104,171,0.4) 82%);
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(60px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 60vw;
+    height: 60vh;
+    overflow: auto;
+}
+
+.align {
+    text-align: center;
+}
+
+.tbox {
+    text-align: left;
+    margin-left: 20px;
+}
+
+@media (max-width: 480px) {
+    .wrapperf {
+      width: 95vw;
+    }
+  }
